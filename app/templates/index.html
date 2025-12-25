@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Recommendation</title>
+</head>
+<body>
+    <h2>Enter your favorite meal</h2>
+    <form method="POST">
+        <input type="text" name="meal" required>
+        <button type="submit">Recommend</button>
+    </form>
+
+    {% if recommendation %}
+        <h3>Recommended Restaurant: {{ recommendation }}</h3>
+    {% endif %}
+</body>
+</html>
