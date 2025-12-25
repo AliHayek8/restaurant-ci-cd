@@ -21,7 +21,7 @@ def index():
             recommendation = result[0]
         else:
             recommendation = "No restaurant found"
-    return render_template("index.html", recommendation=recommendation)
+    return render_template("index.html", recommendation=recommendation + " 🍽️" )
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
